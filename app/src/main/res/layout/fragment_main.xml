@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context=".MainFragment">
+
+
+
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"/>
+        <TextView
+            android:id="@+id/textview_singer"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Singer"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/imageview_img"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/ic_launcher_background">
+
+        </ImageView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_lyrics"
+
+            android:layout_width="350dp"
+            android:layout_height="60dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        <com.google.android.exoplayer2.ui.PlayerControlView
+            android:id="@+id/playercontrolview"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+        </com.google.android.exoplayer2.ui.PlayerControlView>
+
+
+
+
+
+
+
+</LinearLayout>
